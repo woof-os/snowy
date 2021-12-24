@@ -1,6 +1,9 @@
 @import url("https://acutewoof.github.io/minimalist-css-kit/styles/main.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-@import url("./gagalin.otf");
+@font-face {
+  font-family: "Gagalin";
+  src: url("./gagalin.otf");
+}
 @import url("https://cdn.discordapp.com/attachments/802032452109467661/881820950327341086/nord.css");
 
 @keyframes text-enter {
