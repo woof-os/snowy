@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Download Woof OS</title>
+    <style>
+      @import url("index.css");
+    </style>
+  </head>
+  <body>
+    <main class="img-holder">
+      <div style="min-height: 90vh; margin: 0">
+        <div>
+          <div class="center-div">
+            <h1 id="woof-os-h1">Download Woof OS</h1>
+            <div class="sub card" id="what">
+              <p style="text-align: center">
+                We have editions that are designed for different types of users.
+                Download the edition you are comfortable below!
+                <br />
+                <br />
+                <strong>Logging in to the live environment:</strong>
+                <br />
+                Enter <code>root</code> as the username, leave the password
+                field empty and login.
+              </p>
+            </div>
+            <div style="text-align: center; margin: 30px">
+              <a class="btn" href="downloads.html"
+                ><button class="green">Download</button></a
+              >
+              <a class="btn" href="https://github.com/woof-os"
+                ><button>GitHub</button></a
+              >
+              <a class="btn" href="https://discord.gg/p6qNduqwWM"
+                ><button>Discord</button></a
+              >
+              <a class="btn" href="index.html"><button>Home</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="sub card">
+          <h1>Woof OS Qtile Edition</h1>
+          <p>
+            For users who want to do everything in their keyboard (<a
+              href="keybinds.html"
+              >keybinds</a
+            >) and who love the terminal. This edition features Qtile, a great
+            tiling window manager with our minimal and functional configuration.
+          </p>
+          <div style="text-align: center">
+            <button style="width: unset" onclick="redirectQtile()">
+              Download Qtile Edition
+            </button>
+            <p class="dl"><span id="qtile-dl-count"></span> Downloads</p>
+          </div>
+          <br />
+          <br />
+          <div style="text-align: center">
+            <img src="screenshot.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="sub card">
+          <h1>Woof OS Xfce Edition</h1>
+          <p>
+            For beginners who want a light weight and efficient desktop
+            environment. This edition features Xfce with our config to provide a
+            great user experience.
+          </p>
+          <div style="text-align: center">
+            <button style="width: unset" onclick="redirectXfce4()">
+              Download Xfce4 Edition
+            </button>
+            <p class="dl"><span id="xfce-dl-count"></span> Downloads</p>
+          </div>
+          <br />
+          <br />
+          <div style="text-align: center">
+            <img src="screenshot-xfce4.png" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="getDownloads.js"></script>
+  </body>
+</html>

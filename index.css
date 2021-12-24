@@ -1,0 +1,118 @@
+@import url("https://acutewoof.github.io/minimalist-css-kit/styles/main.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("./gagalin.otf");
+
+@keyframes text-enter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Gagalin", sans-serif;
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  background-image: url("./mainsnow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: center;
+}
+
+button {
+  font-family: "Roboto";
+  font-weight: 500;
+  padding: 0.9rem 1rem;
+  line-height: 1.2;
+  background-image: url("./snow.svg");
+  background-size: contain;
+}
+
+main * {
+  animation-name: text-enter;
+  animation-duration: 1s;
+}
+
+.img-holder {
+  background-color: var(--nord0);
+  background-image: url("./wall.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--nord4);
+  padding: 5vh;
+}
+
+.absolute-helper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+#woof-os-h1 {
+  font-size: 5rem;
+  color: var(--nord3);
+  transition: 300ms all ease-in-out;
+  text-shadow: 2px 2px 2px var(--nord5);
+}
+
+.center-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+a.btn:hover {
+  background-color: unset;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    border-radius: 5px;
+    padding: 5vw;
+  }
+  #what {
+    display: none;
+  }
+  button {
+    border-radius: 1vh;
+    padding: 1vh;
+    margin: 1vh;
+  }
+  .dl {
+    font-size: 1rem;
+  }
+  .img-holder {
+    padding: 3rem;
+  }
+}
